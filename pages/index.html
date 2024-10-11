@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/inicio.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"rel="stylesheet"/>
+    <link rel="icon" href="../Images/icono.ico" type="image/x-icon">
+    <title>Inicio</title>
+  </head>
+  <body>
+    <header>
+      <div class="cont_header">
+        <div class="cont_img">
+          <div class="cont_logo">
+            <a href="/pages/index.html"><img src="../Images/icono.ico" alt="" class="logo" /></a>
+          </div>
+          <div class="cont_titulo">
+            <h1 class="titulo">Mimos y Patitas</h1>
+          </div>
+        </div>
+
+        <div class="cont_ul"> 
+          <ul>
+            <a href="index.html"><li>Inicio</li></a>
+            <a href="citas.php"><li>Citas</li></a>
+            <a href="login.php"><li class="sesion">Iniciar sesión</li></a>
+            <a
+              ><button onclick="mostrarTexto('nosotros')" class="btn-nosotros">
+                Nosotros
+              </button></a>
+          </ul>
+        </div>
+        <div class="content-redes">
+          <a
+            href="https://www.instagram.com/mimos_y_patitas?igsh=Yzl6eGRibmd4Mmx1"
+            target="_blank"
+            ><img src="../Images/instagrammorado.png" alt="" class="instagram"
+          /></a>
+          <a href="https://www.facebook.com/Goyipet" target="_blank"
+            ><img src="../Images/facebookmorado.png" alt="" class="facebook"
+          /></a>
+          <div class="contenedor">
+            <div class="imagen-con-hover">
+              <img src="../Images/gmail.png" alt="Descripción de la imagen" />
+              <div class="texto-hover">valeja1718@gmail.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="content-inicio">
+      <div class="content-left">
+        <div class="content-text">
+          <h1 class="pet">PET GROOMING</h1>
+          <h3>Professional Pet Care</h3>
+          <p id="texto-parrafo">
+            Mimos y patitas contamos con el servicio de baño, grooming y
+            peluqueria<br />
+            canina y felina siempre enfocado a realzar la belleza de la
+            mascota,<br />
+            guiándonos por los estándares mundiales de cada una de las razas,<br />
+            implementando técnicas de vanguardia y utilizando materiales e
+            insumos<br />
+            de primera calidad, siempre dirigidos a disminuir el estrés durante
+            el<br />
+            servicio para obtener una experiencia agradable y de máximo
+            bienestar<br />
+            para la mascota logrando el mejor resultado, así como la
+            tranquilidad y<br />
+            seguridad de nuestros clientes.
+          </p>
+        </div>
+          <button class="btn-regresar" hidden onclick="regresar()">
+            Descripcion
+          </button>
+        </div>
+      </div>
+
+      <div class="content-right">
+        <div class="content-img">
+          <img src="../Images/imgfondo.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section >
+      <div class="content-mision-vision">
+        <div class="content-mision">
+          <h1>MISIÓN</h1>
+          <h3>
+            Creemos en lo que hacemos, es por esta razón que ofrecemos un
+            concepto innovador, donde tu mascota y tu puedan encontrar un lugar
+            de calidad, buscamos ganar la confianza de nuestros clientes,
+            demostrando responsabilidad, calidad y transparencia a través de la
+            implementación de los valores de la organización.
+          </h3>
+        </div>
+        <div class="cont_perrito">
+          <img class="perrito" src="../Images/imginicio.png" alt="" />
+        </div>
+        <div class="content-vision">
+          <h1>VISIÓN</h1>
+          <h3>
+            Somos una empresa de belleza canina,<!-- <br/> --> con valores de respeto,
+            dignidad y amor<!-- <br/> --> que ofrece a cada una de las mascotas;<!-- <br/> --> estamos
+            comprometidos con la tarea de<!-- <br/> --> aplicar y fomentar estos valores para
+            enaltecer el respeto a la vida animal en todos los aspectos, nuestra
+            meta es concientizar a la sociedad para cultivar y promover el
+            cuidado y mantenimiento de la salud, así como el bienestar mental y
+            físico de las mascotas para optimizar la cultura animal, ofreciendo
+            un servicio de confianza, accesibilidad, amabilidad y calidad, para
+            consentir, embellecer y asear a nuestras mascotas.
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <!--CARRUSEL-->
+    <div id="contenedor_galeria">
+      <h1 class="galeria">Galeria</h1>
+    </div>
+    <div class="carrusel">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <div class="row">
+                    <div class="col">
+                        <img src="../Images/img1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col">
+                        <img src="../Images/img2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <div class="row">
+                    <div class="col">
+                        <img src="../Images/img3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col">
+                        <img src="../Images/img4.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="row">
+                  <div class="col">
+                      <img src="../Images/img5.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="col">
+                      <img src="../Images/img6.jpg" class="d-block w-100" alt="...">
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="row">
+                <div class="col">
+                    <img src="../Images/img7.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="col">
+                    <img src="../Images/img8.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <div class="row">
+              <div class="col">
+                  <img src="../Images/img9.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="col">
+                  <img src="../Images/img10.jpg" class="d-block w-100" alt="...">
+              </div>
+          </div>
+      </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!--FIN CARRUSEL-->
+
+    <footer>
+      <div class="foot-info">
+        <div class="info-uno">
+          <h1>Mimos y Patitas</h1>
+        </div>
+        <div class="info-dos">
+          <h2>Contactanos</h2>
+          <a href="https://www.google.com/maps/place/Mimos+y+patitas/@2.9362538,-75.2679148,17z/data=!4m15!1m8!3m7!1s0x8e3b75001ceaa6ad:0x5764e8c7ba312544!2sMimos+y+patitas!8m2!3d2.9362538!4d-75.2653399!10e1!16s%2Fg%2F11y2kpd2yy!3m5!1s0x8e3b75001ceaa6ad:0x5764e8c7ba312544!8m2!3d2.9362538!4d-75.2653399!16s%2Fg%2F11y2kpd2yy?entry=ttu" target="_blank" class="btn_ubi"><button class="info-dos-uno btn_ubi">
+            <img src="../Images/ubicacion.png" alt="" />
+            <h3>Colombia,Huila,Neiva</h3>
+          </button></a>
+          <div class="info-dos-uno">
+            <img src="../Images/correo.png" alt="" />
+            <h3>valeja1718@gmail.com</h3>
+          </div>
+        </div>
+        <div class="info-tres">
+          <h2>Conocenos</h2>
+          <a href="#contenedor_galeria"><h3 class="galeria2">Galeria</h3></a>
+          <h3>Equipo</h3>
+        </div>
+        <div class="info-cuatro">
+          <div class="info-cuatro-dos">
+            <h2>Siguenos</h2>
+            <div class="redes_sociales">
+              <a href="https://www.facebook.com/Goyipet"target="_blank"><img src="../Images/facebook.png" alt="" />
+              <a href="https://www.instagram.com/mimos_y_patitas?igsh=Yzl6eGRibmd4Mmx1"target="_blank"><img src="../Images/instagram.png" alt="" />
+              <a href="mailto:valeja1718@gmail.com" target="_blank"><img src="../Images/gmailcolor.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="foot-legal">
+        <div>
+          <h2 class="copy">&copy;2024 Todos los derechos reservados</h2>
+        </div>
+        <div class="cont-legal">
+          <a href="#"><h3>Politicas de privacidad</h3></a>
+          <a href="#"><h3>Terminos de uso</h3></a>
+        </div>
+      </div>
+    </footer>
+    <a href="https://wa.link/sdgyfx" target="_blank"
+            ><img src="../Images/whatsapp.png" alt="" class="whatsapp"
+          /></a> 
+
+  </body>
+  <script type="text/javascript" src="../js/inicio.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</html>
